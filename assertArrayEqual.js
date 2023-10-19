@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 const assertArraysEqual = function(actual, expected, bool) {
   if (eqArrays(actual, expected) === bool) {
     return `✅ Assertion Passed: ${actual} === ${expected}`;
