@@ -7,11 +7,11 @@ const isPalindrome = require('./palindrome');
 const assertArraysEqual = require('./assertArraysEqual');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  palindrome: isPalindrome,
-  flatten: flatten,
-  map: map,
-  assertArraysEqual: assertArraysEqual
+  head,
+  tail,
+  middle,
+  isPalindrome,
+  flatten,
+  map,
+  assertArraysEqual
 };
