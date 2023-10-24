@@ -24,7 +24,7 @@ const assertPalindrome = function(word, expected) {
   }
 };
 
-
+module.exports = isPalindrome;
 // TEST CODE
 // These should all pass assertion, but they don't.
 assertPalindrome('p', true);

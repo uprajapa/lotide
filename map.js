@@ -25,5 +25,6 @@ const eqArrays = function(actual, expected) {
   return true;
 };
 
+module.exports = map;
 const results1 = map(words, word => word[0]);
 console.log(assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ], true));
