@@ -5,6 +5,7 @@ const flatten = require('./flatten');
 const map = require('./map');
 const isPalindrome = require('./palindrome');
 const assertArraysEqual = require('./assertArraysEqual');
+const assertEqual = require('./assertEqual');
 
 module.exports = {
   head,
@@ -13,5 +14,6 @@ module.exports = {
   isPalindrome,
   flatten,
   map,
-  assertArraysEqual
+  assertArraysEqual,
+  assertEqual
 };
