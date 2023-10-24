@@ -1,13 +1,13 @@
 let _ = require('lodash');
 
-const assertArraysEqual = function(actual, expected, bool) {
-  if (eqArrays(actual, expected) === bool) {
-    return `✅ Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    return `🛑 Assertion Failed: ${actual} !== ${expected}`;
-  }
-};
-
+// const assertArraysEqual = function(actual, expected, bool) {
+//   if (eqArrays(actual, expected) === bool) {
+//     return `✅ Assertion Passed: ${actual} === ${expected}`;
+//   } else {
+//     return `🛑 Assertion Failed: ${actual} !== ${expected}`;
+//   }
+// };
+/* 
 const eqArrays = function(actual, expected) {
   for (const char in actual) {
     if (actual[char] !== expected[char]) {
@@ -15,7 +15,7 @@ const eqArrays = function(actual, expected) {
     }
   }
   return true;
-};
+}; */
 
 const middle = function(array) {
   let newArray = [];
@@ -28,11 +28,7 @@ const middle = function(array) {
   } else {
     newArray.push(array[midIndex]);
   }
-  console.log(midIndex);
   return newArray;
 };
 
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3], true));
-console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3], true));
-console.log(assertArraysEqual(middle([1, 2, 3]), [2], true));
-console.log(assertArraysEqual(middle([1]), [], true));
+module.exports = middle;
